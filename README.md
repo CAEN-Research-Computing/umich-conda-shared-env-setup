@@ -118,4 +118,4 @@ rm -f ~/.local/share/jupyter/kernels/$KERNEL_NAME
 ---
 
 ## Maintainer
-jsonk@umich.edu 
+jsonk AT umich
