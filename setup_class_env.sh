@@ -14,7 +14,7 @@ source "$CONFIG_FILE"
 
 # Derive paths
 ENV_DIR="$TURBO_DIR/envs/$KERNEL_NAME"
-KERNEL_DIR="$TURBO_DIR/shared_jupyter_kernels"
+KERNEL_DIR="$TURBO_DIR/envs/shared_jupyter_kernels"
 KERNEL_SPEC_DIR="$KERNEL_DIR/share/jupyter/kernels/$KERNEL_NAME"
 
 # Print effective configuration for verification
