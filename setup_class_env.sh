@@ -62,7 +62,7 @@ echo "Installing kernelspec at $KERNEL_DIR..."
 python -m ipykernel install --prefix="$KERNEL_DIR" --name="$KERNEL_NAME" --display-name="$DISPLAY_NAME"
 
 # Ensure permissions for shared use
-chmod -R a+rx "$ENV_DIR"
-chmod -R a+rx "$KERNEL_DIR"
+chmod -R 750 "$ENV_DIR"
+chmod -R 750 "$KERNEL_DIR"
 
 echo "✔️ Done. Shared environment and Jupyter kernel are ready."
