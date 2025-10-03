@@ -1,0 +1,40 @@
+name: climateENV
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - ipykernel
+  - ipython
+  - jupyter_client
+  - jupyter_core
+  - matplotlib
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - cartopy
+  - netcdf4
+  - xarray
+  - h5py
+  - folium
+  - geopandas
+  - gdal
+  - fiona
+  - shapely
+  - pyproj
+  - rasterio
+  - rioxarray
+  - requests
+  - pillow
+  - cryptography
+  - openssl
+  - ca-certificates
+  - certifi
+  - pip
+  - pip:
+    - dask
+    - earthpy
+    - cowsay
+    - netcdf-flattener
+    - plotly
+    # you may add/remove pip packages as needed
