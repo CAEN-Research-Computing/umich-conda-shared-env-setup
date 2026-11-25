@@ -1,0 +1,41 @@
+# The prefix is chosen by classenv.sh, so no "name:" is needed.
+#
+# conda-forge only ("nodefaults" blocks Anaconda's defaults channel). This avoids
+# Anaconda terms-of-service prompts/errors and mixed-channel binary conflicts,
+# which are especially nasty for the geospatial stack (gdal/proj/geos).
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - python=3.12
+  - ipykernel          # pulls in ipython, jupyter_client, jupyter_core
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - plotly
+  - dask
+  - xarray
+  - netcdf4
+  - h5py
+  - cartopy
+  - geopandas
+  - gdal
+  - fiona
+  - shapely
+  - pyproj
+  - rasterio
+  - rioxarray
+  - folium
+  - requests
+  - pillow
+  - pip
+  # Only put things here if they are NOT on conda-forge. Pip packages are not
+  # tracked by the solver and are the most common source of drift.
+  - pip:
+      - earthpy
+      - cowsay
+      - netcdf-flattener
+
